@@ -1,0 +1,17 @@
+-
+    var myfullname = 'Matthieu Rouland'
+    var myjobtitle = 'Immunologist'    
+    var sociallist= [
+        {icon:'linkedin2',url:'https://linkedin.com/in/matthieu-rouland/'},
+        {icon:'github',url:'https://linkedin.com/in/matthieu-rouland/'},
+    ]
+#landing-page
+.landing-page
+    .landing-page_wrapper
+        h1.landing-page__name=myfullname
+        h2.landing-page__title=myjobtitle
+        ul.landing-page__social
+            each social in sociallist         
+                li.landing-page__item
+                    label.landing-page__label(for="")
+                        span(class=`icon-${social.icon}`)
