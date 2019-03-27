@@ -1,6 +1,7 @@
 -
     var myfullname = 'Matthieu Rouland'
     var myjobtitle = 'Immunologist'    
+    var myresumefooter = "Online homemade resume produced with HTML5, NodeJS and CSS3"
     var sociallist= [
         {
             icon:'linkedin2',
@@ -33,3 +34,4 @@
                 input.landing-page__box-radio(type="radio",name="CV-radio", id=`message-box-id-${key}`)
                 .landing-page__box-message
                     a.landing-page__box-link(href=social.url, target="_blank")=social.url
+        .landing-page__footer=myresumefooter
