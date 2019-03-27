@@ -3,7 +3,7 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    background-image: radial-gradient(#034F84, #2E4A62)
+    background-image: radial-gradient(#86A8E7, #7F7FD5)
 
 }
 
@@ -36,4 +36,79 @@
     font-size: 2rem;
     cursor: pointer;
  
+}
+
+.landing-page__box-radio:checked + 
+.landing-page__box-message{
+    padding: 1rem 0;
+    display: inherit;
+
+}
+
+.landing-page__box-radio,
+.landing-page__box-message{
+    display: none;
+}
+
+#default-message-radio:checked+
+.landing-page__box-message + 
+.landing-page__box-header {
+    display: none;
+}
+
+.landing-page__box-body{
+    display: inline-block;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.landing-page__box-header{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-page__box-info,
+.landing-page__box-close {
+    background: white;
+    padding: 0.4rem;
+    white-space: nowrap;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.landing-page__box-info {
+    border-bottom-left-radius: 0.5rem;
+    flex-grow: 1;
+}
+
+.landing-page__box-close {
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    width: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.landing-page__box-link,
+.landing-page__box-link:visited,
+.landing-page__box-message {
+    color: white;
+}
+
+.landing-page__box-link,
+.landing-page__box-link:visited {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80vmin;
+    display: block;
 }
