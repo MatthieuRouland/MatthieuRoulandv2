@@ -2,6 +2,7 @@
     var myfullname = 'Matthieu Rouland'
     var myjobtitle = 'Immunologist'    
     var myresumefooter = "Online homemade resume produced with HTML5, NodeJS and CSS3"
+
     var sociallist= [
         {
             icon:'linkedin2',
@@ -17,6 +18,7 @@
     .landing-page__wrapper
         h1.landing-page__name=myfullname
         h2.landing-page__title=myjobtitle 
+            .landing-page__title(type="link")
             //-add click => Radio of some stuff (w/ a movement to the left for the title)
         ul.landing-page__social
             each social, key in sociallist         
@@ -24,11 +26,11 @@
                     label.landing-page__label(for=`message-box-id-${key}`)
                         span(class=`icon-${social.icon}`)
         .landing-page__box-body
-            input.landing-page__box-radio(type="radio", name="CV-radio",checked, id="default-message-radio") 
+            input.landing-page__box-radio(type="radio", name="CV-radio",checked , id="default-message-radio") 
             Visible
-                .landing-page__box-message Click the above icons to reveal
+                .landing-page__box-message 
                 .landing-page__box-header 
-                    .landing-page__box-info Click to visit
+                    .landing-page__box-info click to visit
                     label.landing-page__box-close(for="default-message-radio") &times; 
             each social, key in sociallist 
                 input.landing-page__box-radio(type="radio",name="CV-radio", id=`message-box-id-${key}`)

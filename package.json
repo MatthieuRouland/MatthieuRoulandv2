@@ -106,5 +106,8 @@
     "jstransformer-markdown-it": "2.1.0",
     "merge-stream": "1.0.1",
     "minimist": "1.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

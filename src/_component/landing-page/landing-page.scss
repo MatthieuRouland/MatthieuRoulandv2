@@ -24,6 +24,24 @@
     color: white;
 }
 
+
+.landing-page__title{
+    Left: 500px;
+}
+
+
+.landing-page__title:active{
+    position: relative;
+    -webkit-transition: right 2s ease-in-out;
+    -moz-transition: right 2s ease-in-out;
+    -ms-transition: right 2s ease-in-out;
+    -o-transition: right 2s ease-in-out;
+    transition: right 2s ease-in-out;
+    
+}
+
+
+
 .landing-page__social {
     display: flex;
     margin-top: 3rem;
@@ -38,10 +56,12 @@
  
 }
 
+
+
 .landing-page__box-radio:checked + 
 .landing-page__box-message{
     padding: 1rem 0;
-    display: inherit;
+    display: inline-block;
 
 }
 
@@ -57,7 +77,7 @@
 }
 
 .landing-page__box-body{
-    display: inline-block;
+    display: block;
     border: 0.2rem solid white;
     border-radius: 0.5rem;
     padding: 0.8rem;
@@ -115,12 +135,15 @@
 
 .landing-page__footer{
     position: fixed;
-    margin-left: 0%;
+    margin-left: 50%;
     bottom: 0;
     width: 100%;
     display: flex;
     font-size: 0.7em;
     font-style: italic;
     background-color: aliceblue;
-    
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+ 
 }
