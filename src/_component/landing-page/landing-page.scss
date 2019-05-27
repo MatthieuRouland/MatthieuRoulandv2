@@ -145,5 +145,23 @@
     border-radius: 0.5rem;
     padding: 0.2rem;
     margin-top: 0.5rem;
- 
-}
+ }
+
+ .landing-page__wave{
+        position: relative;
+        top:0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        height: 100%;
+        width: 200%;
+        background-repeat: repeat-x;
+        transform-origin: center bottom;
+        color: black;
+ }
+
+ @keyframes wave{
+     0% {transform: translateX(0) translateZ(0) scaleY(1);}
+     0% {transform: translateX(-25%) translateZ(0) scaleY(0.5);}
+     0% {transform: translateX(-50%) translateZ(0) scaleY(1);}
+ }

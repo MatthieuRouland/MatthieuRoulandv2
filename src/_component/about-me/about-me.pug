@@ -1,16 +1,12 @@
 //- data comes here
 -
-    var header = '#about me'
+    var header = 'About me'
     var imagePath = "asset/image/me.jpg"
     var myFullName = "Matthieu ROULAND"
     var myTitle = "Immunologist"
-    var slogan = ` For people who truly, madly, deeply love coffee`
-    var achievements = {
-        title: 'achievement',
-        content: 'My acheviements',
-    }
+    var slogan = ` A guy who truly, madly, deeply love coffee`
     var coolStuff = {
-        title: 'grab cool stuff',
+        title: '',
         buttonList: [
             {
               url: 'https://github.com/MatthieuRouland/MatthieuRouland',
@@ -28,10 +24,6 @@
     .about-me__full-name=myFullName
     .about-me__title=myTitle
     .about-me__slogan=slogan
-
-    .about-me__title=achievements.title
-    .about-me__content=achievements.content
-
     .about-me__title=coolStuff.title
     .about-me__link-list
         each button in coolStuff.buttonList

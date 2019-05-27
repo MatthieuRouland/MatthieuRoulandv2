@@ -2,7 +2,7 @@
     var myfullname = 'Matthieu Rouland'
     var myjobtitle = 'Immunologist'    
     var myresumefooter = "Online homemade resume produced with HTML5, NodeJS and CSS3"
-
+    var WavePath = "asset/image/1.png"
     var sociallist= [
         {
             icon:'linkedin2',
@@ -37,3 +37,7 @@
                 .landing-page__box-message
                     a.landing-page__box-link(href=social.url, target="_blank")=social.url
         .landing-page__footer=myresumefooter
+
+.landing-page__wave
+    div(style="relative; overflow:hidden;")
+    div(class="wave" style='background-image:url(#{require("asset/image/1.png")}) ; background-size: 50% 75px;')
